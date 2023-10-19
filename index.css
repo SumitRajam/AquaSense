@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0;
+    transition:  all .2s linear;
+}
+
+body {
+    background-color: rgb(233, 233, 255);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(196, 207, 255, 0.7)), url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ------------------------------------------------------------------------------------------------
+                                        Home page 
+---------------------------------------------------------------------------------------------------*/
+#name {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#header.fixed-top {
+    min-height: 70px;
+}
+
+#header {
+    align-items: center;
+    z-index: 100;
+    height: 70px;
+    background-color: white;
+    min-width: 100%;
+}
+
+.navbar-custom {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.132);
+    border-bottom: rgb(238, 209, 255) solid 1px;
+}
+
+.logo {
+    width: 30px;
+}
+
+.custom {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-box {
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 10px 10px 29px 10px rgba(18, 66, 101, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    text-align: center;
+    min-width: 300px;
+    max-width: 300px;
+    height: 280px;
+    margin: 30px;
+    padding: 20px 10px 20px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#minimap {
+    background-image: url("minimap.jpg");
+    background-size: cover;
+}
+
+.inside {
+    width: 280px;
+    height: 210px;
+    padding-top: 160px;
+}
+
+.icon-box button {
+    background-color: rgb(118, 62, 168);
+    color: #efe3ff;
+}
+
+.icon-box button:hover{
+    background-color: #d1aeff;
+    color:  rgb(91, 57, 120);
+    border:  rgb(118, 62, 168) solid 1px;
+    /* font-weight: bold; */
+}
+
+.icon-box:hover {
+    transform: scale(1.08);
+    border: 1px solid #b883ff;
+    transition: border 0s;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* @media (max-width: 991px) {
+    .custom {
+        width: fit-content;
+    }
+
+    .icon-box {
+        min-width: 80%;
+    }
+} */
+
+@media (max-width: 500px) {
+    .custom {
+        width: fit-content;
+    }
+
+    .icon-box {
+        min-width: 300px;
+    }
+}
+
+marquee {
+    width: 280px;
+    height: 200px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------------
+                                        Complaint page 
+---------------------------------------------------------------------------------------------------*/
+
+#map {
+    height: 400px;
+}
+
+.container form{
+    padding : 20px;
+    width : 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.container form .row{
+    display : flex;
+    flex-wrap: wrap;
+    gap : 15px;
+}
+
+.container form .row .col{
+    flex : 1 1 250px;
+}
+
+.container form .row .col .title{
+    font-size : 20px;
+    color : #333;
+    padding-bottom : 5px;
+    text-transform : uppercase;
+}
+
+.container form .row .col .inputbox{
+    margin: 15px 0;
+
+}
+
+.container form .row .col .inputbox span{
+    margin-bottom: 5px;
+    display : block;
+}
+
+.container form .row .col .inputbox input{
+    width : 100%;
+    border : 1px solid #ccc;
+    padding : 10px 15px;
+    font-size : 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputbox input:focus{
+    border : 1px solid #000;
+}
+
+.container form .row .col .flex{
+    display : flex;
+    gap : 15px;
+
+}
+
+.container form .row .col .flex .inputbox{
+    margin-top : 5px;
+}
+
+.container form .row .col .inputbox img{
+    height : 34px;
+    margin-top : 5px;
+    filter : drop-shadow(0 0 1px #000);
+
+}
+
+.container form .submit-btn{
+    width : 100%;
+    padding : 12px;
+    font-size : 17px;
+    background: #27ae60;
+    color : #fff;
+    margin-top : 5px;
+    cursor:pointer;
+    border-radius: 10px;
+}
+
+.container form .submit-btn:hover{
+    background : #2ecc71
+}
+

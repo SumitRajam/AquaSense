@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaSense</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <div id="Window" class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+            <a id="name" class="navbar-brand" href="#"><img class="logo"
+                    src="https://th.bing.com/th/id/OIP.JVmwTQb-R9nXfN3UVR27HgHaHa?w=197&h=197&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt="logo">AquaSense</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-succ d-table">Sign in</button>
+                            <button type="button" class="btn btn-success d-table" data-toggle="modal"
+                                data-target="#ModalForm">Log in</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Modal Form -->
+        <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Login Form -->
+                    <form action="" id="Modal1">
+                        <div class="modal-header">
+                            <h5 class="modal-title">AquaSense</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="Username">Username<span class="text-danger">*</span></label>
+                                <input type="text" name="username" class="form-control" id="Username"
+                                    placeholder="Enter Username">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Password">Password<span class="text-danger">*</span></label>
+                                <input type="password" name="password" class="form-control" id="Password"
+                                    placeholder="Enter Password">
+                            </div>
+                            <!-- <div class="mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                            <label class="form-check-label" for="remember">Remember Me</label>
+                            <a href="#" class="float-end">Forgot Password</a>
+                        </div> -->
+                        </div>
+                        <div class="modal-footer pt-4">
+                            <button type="button" class="btn btn-success mx-auto w-100">Login</button>
+                        </div>
+                        <p class="text-center">Not yet account, <a href="#">Signup</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container custom justify-content-center">
+
+            <div class="icon-box">
+                <div class="label">
+                    <h4>Pipeline Network Map</h4>
+                </div>
+                <div id="minimap" class="inside">
+                    <button type="button" class="btn">Explore</button>
+                </div>
+            </div>
+            <div class="icon-box">
+                <h4>Water Supply Timespan</h4>
+            </div>
+            <div class="icon-box">
+                <h4>News and Notices</h4>
+                <div>
+                    <marquee onmouseover="stopMarquee()" onmouseout="startMarquee()" scrollamount="2" direction="up"
+                        loop="true">
+                        <center>
+                            <font color="black" size="+1">SCROLLING TEXT</font>
+                            <p>
+                                <font color="#ff0000" size="+1">UPWARD</font>
+                            <p>
+                                <font color="black" size="+1">IS</font>
+                            <p>
+                                <font color="black" size="+1">TO MAKE THE</font>
+                            <p>
+                                <font color="black" size="+1">SITE</font>
+                            <p>
+                                <font color="black" size="+1">STAND OUT</font>
+                            <p>
+                                <font color="black" size="+1">FROM THE REST!</font>
+                        </center>
+                    </marquee>
+                </div>
+            </div>
+            <div class="icon-box">
+                <h4>New connection</h4>
+            </div>
+            <div class="icon-box">
+                <div class="button1">
+                    <h4>Raise Complaint</h4>
+                    <div class="inside">
+                        <button type="button" class="btn" onclick="Raise()">Raise</button>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-box">
+                <h4>Check Your Bill</h4>
+            </div>
+        </div>
+
+        <footer class="footer mt-auto py-3" style="background-color: rgb(248, 228, 255);">
+            <div class="container">
+                <span class="text-muted">Contact us: <a
+                        href="mailto:dmpokharanakar@gmail.com?subject=Subject%20Here">dmpokharanakar@gmail.com</a></span>
+                <p><span class="text-muted"></span></p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
