@@ -102,14 +102,14 @@ body {
     }
 
     .icon-box {
-        min-width: 80%;
+         min-width: 80%; 
     }
 } */
 
 @media (max-width: 500px) {
-    .custom {
-        width: fit-content;
-    }
+    /* .custom {
+    
+    } */
 
     .icon-box {
         min-width: 300px;
@@ -120,10 +120,6 @@ marquee {
     width: 280px;
     height: 200px;
 }
-
-/* #Window {
-    min-width: 100vw; 
-} */
 
 footer {
     width: 100%;
